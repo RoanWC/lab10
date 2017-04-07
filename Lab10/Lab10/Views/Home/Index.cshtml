@@ -1,0 +1,19 @@
+﻿
+
+@{
+    ViewBag.Title = "Index"; 
+}
+@model List<Lab10.Models.Address>
+<h2>Index</h2>
+@foreach(var item in Model)
+{
+    <section class="contact">
+    <div class="name">@item.FirstName @item.LastName</div>
+    <div class="email">@item.Email</div>
+    <div class="phone">@item.PhoneNumber</div>
+    </section>
+    <br/>
+
+}
+
+ 
